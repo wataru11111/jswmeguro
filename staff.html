@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>スタッフ応募フォーム - ジュニアスイミング目黒</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="bg-primary text-white text-center py-4">
+  <h1>スタッフ応募フォーム</h1>
+</header>
+
+<main class="container py-5">
+  <p class="mb-4 text-center">子どもが好きな方、大歓迎！<br>以下のフォームにご記入のうえ、ご応募ください。</p>
+
+  <form action="https://formspree.io/f/xzzrjwan" method="POST" class="mx-auto staff-form">
+
+
+    <div class="mb-3">
+      <label for="name" class="form-label">名前</label>
+      <input type="text" name="名前" class="form-control" id="name" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="gender" class="form-label">性別</label>
+      <select class="form-select" name="性別" id="gender" required>
+        <option value="">選択してください</option>
+        <option value="男性">男性</option>
+        <option value="女性">女性</option>
+        <option value="その他">その他</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="age" class="form-label">年齢</label>
+      <input type="number" name="年齢" class="form-control" id="age" required min="16" max="100" />
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label">電話番号</label>
+      <input type="tel" name="電話番号" class="form-control" id="phone" required />
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">応募する</button>
+  </form>
+</main>
+
+<footer class="footer text-center py-4">
+  <a href="index.html" class="btn btn-outline-primary">トップページへ戻る</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
