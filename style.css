@@ -126,3 +126,13 @@ body {
     height: 200px;
   }
   
+  #lesson-detail table th,
+#lesson-detail table td {
+  vertical-align: middle;
+}
+
+#lesson-detail h2 {
+  font-weight: bold;
+  border-left: 8px solid #0d6efd;
+  padding-left: 15px;
+}
