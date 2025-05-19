@@ -136,3 +136,28 @@ body {
   border-left: 8px solid #0d6efd;
   padding-left: 15px;
 }
+
+/* イベント情報 */
+.event-info {
+    background: linear-gradient(to right, #e0f7ff, #ffffff);
+    border-left: 6px solid #00aaff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto 30px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .event-info h3 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .event-info p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
